@@ -1,0 +1,41 @@
+#meta data
+title : Gaura Portofolio | Software Engineer
+
+# Greetings
+greetings: Hello there! I'm Gaura
+punchline: A fullstack web developer that help you solve your problem!
+
+# Profile Settings
+profile:
+  image: assets/img/self_photo.jpg
+  username: Gaura
+  description: Hello world! Grape-Theme is my first jekyll theme and you can customize this theme easily.
+  experience:
+    - start: Jan, 2022
+      end: Oct, 2023
+      experience: Smartmates / Software Engineer
+      description: Zoho CRM Consulting Firm
+    - start: Mar, 2021
+      end: Dec, 2021
+      experience: PT.Telkom Indonesia Witel Madura / L2 IT Support
+      description: Internet Service Provider
+    - start: Mar, 2019
+      end: Aug, 2019
+      experience: PT.PLN ULP Tabanan / Field Engineer Internship
+      description: Utility Company
+  skills:
+    - skill: HTML5 & CSS
+
+# Icons
+icons:
+  email: gauraputu@gmail.com # Full email address, e.g. "sample@google.com"
+  linkedin: https://www.linkedin.com/in/gaura-putu/ # Full URL
+  github: gauraputu
+  whatsapp: https://wa.me/6285155228049
+  gitlab:
+  bitbucket:
+  google_plus:
+  twitter:
+  youtube:
+  facebook:
+  instagram:

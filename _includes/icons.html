@@ -1,8 +1,16 @@
-{% assign icons = site.theme_settings.icons %}
+{% assign icons = site.data.content.icons %}
+{% if icons.whatsapp %}
+<li>
+  <a href="{{ icons.whatsapp }}">
+    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+  </a>
+</li>
+{% endif %}
+
 {% if icons.email %}
 <li>
   <a href="mailto:{{ icons.email }}">
-    <i class="fas fa-envelope"></i>
+    <i class="fa-regular fa-envelope"></i>
   </a>
 </li>
 {% endif %}
