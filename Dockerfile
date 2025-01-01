@@ -1,18 +1,18 @@
 # Create a Jekyll container from a Ruby Alpine image
 
-# At a minimum, use Ruby 2.5 or later
-FROM ruby:3.3.5-alpine3.20
+FROM ruby:3.4.1-slim-bookworm
 
-# Add Jekyll dependencies to Alpine
-RUN apk update
-RUN apk add --no-cache build-base gcc cmake git
-
-# Update the Ruby bundler and install Jekyll
-RUN gem update bundler && gem install bundler jekyll webrick
+# Add Jekyll dependencies
+RUN apt update
+RUN apt install -y build-essential gcc cmake git
 
 # setup app folder
 WORKDIR /app
+COPY . .
+
+# install project dependency
+RUN bundle install
 
 # keep the container running
-CMD ["sleep", "infinity"]
+CMD ["bundle", "exec", "jekyll", "serve", "--livereload", "--host", "0.0.0.0"]
 
